@@ -31,8 +31,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "Education",
+    title: "Education",
   },
   {
     id: "contact",
@@ -164,14 +164,14 @@ const projects = [
   {
     name: "E-commerce website",
     description:
-      "Web-based platform that allows users to search and buy Laptops ,Smartphones ,Tablets and accessories",
+      "Web-based platform that allows users to search and buy Laptops , Smartphones, Tablets and accessories",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "django-rest-frameword",
+        name: "django-rest-framework",
         color: "green-text-gradient",
       },
       {

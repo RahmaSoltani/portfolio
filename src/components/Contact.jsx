@@ -32,18 +32,16 @@ const Contact = () => {
     setLoading(true);
 
     emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "JavaScript Mastery",
-          from_email: form.email,
-          to_email: "soltanirahma626@gmail.com",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
+    .send(
+      'service_3yp6u1s', // Replace with your EmailJS service ID
+      'template_pch0cwj', // Replace with your EmailJS template ID
+      {
+        name: form.name,
+        email:form.email,
+        message: form.message,
+      },
+      'TARy2iM6K2bgeUZto' // Replace with your EmailJS user ID
+    )
       .then(
         () => {
           setLoading(false);
