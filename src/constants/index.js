@@ -80,7 +80,15 @@ const technologies = [
     name: "Tailwind CSS",
     icon: tailwind,
   },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
 
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
 
 ];
 
