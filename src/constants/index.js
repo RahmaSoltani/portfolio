@@ -31,8 +31,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "Education",
-    title: "Education",
+    id: "education",
+    title: "education",
   },
   {
     id: "contact",
@@ -42,14 +42,17 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Django Developement",
+    title: "Backend Developement",
   },
   {
-    title: "Java Developement",
+    title: "Frontend Integration",
   },
   {
-    title: "React Developement",
+    title: "Database Management",
   },
+  {
+    title: " Software Engineering",
+  }, 
 ];
 
 const technologies = [
@@ -91,20 +94,21 @@ const technologies = [
   },
   {
     name: "figma",
-    icon: figma,
+    icon: typescript,
   },
 
 ];
 
 const experiences = [
   {
-    title: "Baccalaureate degree",
-    company_name: "Mahfoud Saad High School -Bir El Ater-Tebessa",
+    title: "Secondary cycle in computer science",
+    company_name: "Higher National School of Computer Science-Algiers",
+    icon: shopify,
     iconBg: "#383E56",
-    date: "Sep 2018 - Jun 2021",
+    date: "Jun 2023 - present",
     points: [
-      "Graduated with an average of 18.34 in the scientific stream, showcasing a strong commitment to academic excellence.",
-      "Demonstrated a keen aptitude for mathematics, consistently achieving top scores in challenging math courses.",
+      "Progressed seamlessly to the secondary cycle of my studies, underpinned by a strong academic foundation and unwavering commitment..",
+
     ],
   },
   {
@@ -120,15 +124,15 @@ const experiences = [
  
     ],
   },
+ 
   {
-    title: "Secondary cycle in computer science",
-    company_name: "Higher National School of Computer Science-Algiers",
-    icon: shopify,
+    title: "Baccalaureate degree",
+    company_name: "Mahfoud Saad High School -Bir El Ater-Tebessa",
     iconBg: "#383E56",
-    date: "Jun 2023 - present",
+    date: "Sep 2018 - Jun 2021",
     points: [
-      "Progressed seamlessly to the secondary cycle of my studies, underpinned by a strong academic foundation and unwavering commitment..",
-
+      "Graduated with an average of 18.34 in the scientific stream, showcasing a strong commitment to academic excellence.",
+      "Demonstrated a keen aptitude for mathematics, consistently achieving top scores in challenging math courses.",
     ],
   },
 ];
@@ -203,7 +207,31 @@ const projects = [
     image: jobit,
     source_code_link: "https://github.com/",
   },
-  
+  {
+    name: " Scientific Article Search Platform",
+    description:
+      "A streamlined web platform for quick keyword-based searching of scientific articles. Instant access to a wide range of academic resources.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "django-rest-framework",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "elasticsearch",
+        color: "text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

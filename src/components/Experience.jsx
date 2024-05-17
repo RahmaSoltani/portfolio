@@ -4,8 +4,10 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
+import { BallCanvas } from "./canvas";
 
 import "react-vertical-timeline-component/style.min.css";
+import { technologies } from "../constants";
 
 import { styles } from "../styles";
 import { experiences } from "../constants";
@@ -53,10 +55,9 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
+
+
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
-        </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Education
         </h2>
@@ -72,8 +73,17 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
+
+      {/* Add margin to create space between the cards and the balls */}
+      <div className='mt-20 flex flex-row flex-wrap justify-center gap-12'>
+        {technologies.map((technology) => (
+          <div className='w-28 h-28' key={technology.name}>
+            <BallCanvas icon={technology.icon} />
+          </div>
+        ))}
+      </div>
     </>
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "education");
