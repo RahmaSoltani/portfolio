@@ -68,6 +68,18 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Redux Toolkit",
+    icon: redux,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
 
 
 ];
