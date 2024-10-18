@@ -96,7 +96,9 @@ const experiences = [
     iconBg: "#383E56",
     date: "Jun 2023 - present",
     points: [
-      "Progressed seamlessly to the secondary cycle of my studies, underpinned by a strong academic foundation and unwavering commitment..",
+      "Progressed seamlessly to the secondary cycle of my studies, underpinned by a strong academic foundation and unwavering commitment.."
+      " Currently specializing in software engineering, focusing on designing and developing efficient, scalable, and robust systems."
+      ,
 
     ],
   },
